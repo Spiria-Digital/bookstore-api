@@ -56,8 +56,9 @@ Assume that you are building a RESTful API for a bookstore. The database is in-m
 - The project manager has told you that you can ask for help from the team if you need it.
 
 ## Submission
-Fork this repository to your own GitHub account and clone it to your local machine.
-Please submit your solution as a pull request to this repository. The pull request should include the following:
+Download this code and create your own git repository. Once you have completed the user stories and acceptance criteria provided, create a pull request and invite the reviewer to review your code. The reviewer's information will be provided by the recruiter.
+
+The pull request should include the following:
 
 - A detailed description of the changes you made.
 - A detailed description of any assumptions you made where the requirements were unclear.

@@ -1,19 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using BookStoreApi.Models;
 
 namespace BookStoreApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class OrderController : ControllerBase
+    public class OrderController(BookStoreDbContext context) : ControllerBase
     {
-        private readonly BookStoreDbContext _context;
-
-        public OrderController(BookStoreDbContext context)
-        {
-            _context = context;
-        }
+        private readonly BookStoreDbContext _context = context;
 
         // GET: api/Order
         [HttpGet]
